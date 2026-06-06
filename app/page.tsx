@@ -33,14 +33,14 @@ export default function Home() {
       <main>
         <section className="relative overflow-hidden border-b border-border">
           <div className="absolute inset-0 grid-surface mask-fade opacity-70" />
-          <div className="relative mx-auto grid min-h-[calc(100svh-4rem)] w-[min(1180px,calc(100%-1.5rem))] items-center gap-10 py-16 lg:grid-cols-[0.93fr_1.07fr] lg:py-20">
+          <div className="relative mx-auto grid w-[min(1180px,calc(100%-1.5rem))] items-center gap-10 py-8 md:min-h-[calc(86svh-4rem)] md:py-16 lg:grid-cols-[0.93fr_1.07fr] lg:py-16">
             <Reveal>
               <div>
                 <div className="mb-5 inline-flex items-center gap-2 rounded-md border border-primary/30 bg-primary/10 px-3 py-2 text-xs font-bold uppercase tracking-[0.18em] text-primary">
                   <Sparkles size={14} />
                   {profile.positioning}
                 </div>
-                <h1 className="max-w-4xl text-balance text-5xl font-semibold leading-[0.98] text-foreground md:text-7xl">
+                <h1 className="max-w-4xl text-balance text-4xl font-semibold leading-[1.02] text-foreground sm:text-5xl md:text-6xl">
                   Product-minded engineering for SaaS systems with AI in the workflow.
                 </h1>
                 <p className="mt-6 max-w-2xl text-lg leading-8 text-muted-foreground">
@@ -66,7 +66,7 @@ export default function Home() {
                     </Button>
                   </a>
                 </div>
-                <div className="mt-8 grid gap-3 sm:grid-cols-3">
+                <div className="mt-8 hidden gap-3 sm:grid sm:grid-cols-3">
                   {["Senior Software Engineer", "SaaS Architect", "Technical Leader"].map((item) => (
                     <div key={item} className="rounded-md border border-border bg-white/[0.035] p-3 text-sm font-semibold">
                       {item}
@@ -75,7 +75,7 @@ export default function Home() {
                 </div>
               </div>
             </Reveal>
-            <Reveal delay={0.08}>
+            <Reveal delay={0.08} className="hidden md:block">
               <DashboardHero />
             </Reveal>
           </div>
