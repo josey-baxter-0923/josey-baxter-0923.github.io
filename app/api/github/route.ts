@@ -1,8 +1,7 @@
 import { NextResponse } from "next/server";
 import { getGithubSnapshot } from "@/lib/github";
 
-export const dynamic = "force-dynamic";
-export const revalidate = 3600;
+export const dynamic = "force-static";
 
 export async function GET() {
   try {

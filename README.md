@@ -28,6 +28,8 @@ Visit `http://localhost:3000`.
 npm run build
 ```
 
+The build exports a static GitHub Pages site into `out/`.
+
 ## Content Model
 
 - `data/portfolio.ts` - structured project, metrics, audit, architecture, and timeline data
@@ -43,4 +45,11 @@ The site intentionally treats the GitHub profile as part of the product surface.
 
 ## Deployment
 
-Deploy on Vercel as a Next.js project. After deployment, add the Vercel URL to the GitHub profile and pin only original repositories with code, screenshots, documentation, and deployment links.
+This repository is configured for GitHub Pages.
+
+1. Push changes to `main`.
+2. In GitHub, open **Settings -> Pages**.
+3. Set **Build and deployment** source to **GitHub Actions**.
+4. Wait for the **Deploy GitHub Pages** workflow to finish.
+
+The site should then be available at `https://josey-baxter-0923.github.io/`.

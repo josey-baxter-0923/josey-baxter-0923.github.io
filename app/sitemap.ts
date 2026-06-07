@@ -1,6 +1,8 @@
 import type { MetadataRoute } from "next";
 import { caseStudies } from "@/data/portfolio";
 
+export const dynamic = "force-static";
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://josey-baxter-0923.github.io";
 
